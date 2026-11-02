@@ -1,0 +1,18 @@
+---
+// Inline Lucide icon (same icon set as the QCON app). Rendered at build time: no JavaScript.
+interface Props { name: string; class?: string }
+const { name, class: className = "" } = Astro.props;
+const icons = import.meta.glob("/node_modules/lucide-static/icons/*.svg", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
+const raw = icons[`/node_modules/lucide-static/icons/${name}.svg`];
+if (!raw) throw new Error(`Unknown icon: ${name}`);
+const svg = raw
+  .replace(/<!--[\s\S]*?-->/g, "")
+  .replace(/\s(width|height)="24"/g, "")
+  .replace(/class="[^"]*"/, `class="${className}" aria-hidden="true"`)
+  .trim();
+---
+<Fragment set:html={svg} />

@@ -1,0 +1,229 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+
+// ── Page copy (same content as the original React landing page) ──
+const problems = [
+  { title: "Excel & WhatsApp Chaos", text: "Juggling spreadsheets and sending quotations through chat. No central system, no version control." },
+  { title: "Manual Recalculations", text: "Every scope change means recalculating everything by hand. Easy to make mistakes." },
+  { title: "Losing Margin", text: "Underquoting because you forgot to include costs or miscalculated markups." },
+  { title: "Version Confusion", text: "Which quotation version did you send? Was it the updated one? Nobody knows." },
+  { title: "Unprofessional Presentation", text: "Your quotations don't look as good as your work. First impressions matter." },
+  { title: "Time Wasted", text: "Hours spent on quotation admin instead of actual project work." },
+];
+const solutions = [
+  { icon: "layers", title: "Structured Quotation Sections", text: "Organize your quotation by category — carpentry, electrical, painting, and more. Clear structure your clients can understand." },
+  { icon: "calculator", title: "Clear Material & Labour Breakdown", text: "Separate costs and selling prices. See your margin on every line item before you send." },
+  { icon: "trending-up", title: "Automatic Calculations", text: "Totals, subtotals, and margins calculated automatically. Change one number and everything updates." },
+  { icon: "file-down", title: "Professional PDF Output", text: "Generate clean, professional quotation PDFs with your company branding. Look as good as your work." },
+  { icon: "clock", title: "Faster Quotation Preparation", text: "Create quotations in minutes, not hours. Duplicate and modify for similar projects." },
+  { icon: "refresh-cw", title: "Easy Revisions", text: "Need to update the quotation? Make changes and regenerate. Track different versions." },
+];
+const features = [
+  { icon: "layers", title: "Section-Based Builder", text: "Organize by work category" },
+  { icon: "calculator", title: "Line Item Costing", text: "Track cost & selling price" },
+  { icon: "trending-up", title: "Margin Visibility", text: "See profit on every item" },
+  { icon: "file-down", title: "PDF Generation", text: "Professional documents" },
+  { icon: "refresh-cw", title: "Easy Revisions", text: "Update and regenerate" },
+];
+const audiences = [
+  { icon: "ruler", title: "Interior Designers", text: "Create detailed quotations for renovation and fit-out projects" },
+  { icon: "hard-hat", title: "Renovation Contractors", text: "Quote confidently with clear cost breakdowns" },
+  { icon: "building-2", title: "Construction Teams", text: "Manage project quotations with your team" },
+  { icon: "briefcase", title: "Project-Based Businesses", text: "Any business that quotes on a project basis" },
+];
+const comparisons = [
+  { title: "vs. Excel", tint: "bg-red-100 text-red-600", points: ["No more formula errors", "Professional PDF output included", "Built-in margin tracking", "Team access and collaboration"] },
+  { title: "vs. Generic Invoice Apps", tint: "bg-orange-100 text-orange-600", points: ["Designed for quotations, not invoices", "Section-based structure for construction", "Cost vs selling price tracking", "Understands contractor workflows"] },
+  { title: "vs. Custom Systems", tint: "bg-purple-100 text-purple-600", points: ["Ready to use immediately", "No development costs", "Regular updates and improvements", "Support when you need it"] },
+];
+const benefits = [
+  { icon: "shield", title: "Protects Your Margins", text: "Never underquote again" },
+  { icon: "clock", title: "Saves Time", text: "Quote faster, win more work" },
+  { icon: "trending-up", title: "Reduces Mistakes", text: "Automatic calculations" },
+];
+
+const description =
+  "Create renovation and interior design quotations in minutes: material and labour breakdown, automatic margins and professional PDFs. Built for Malaysian contractors.";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "QCON",
+    url: "https://qcon.solutions/",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    description:
+      "Quotation software for interior designers and renovation contractors: section-based quotations, material and labour costing, margin visibility and PDF output.",
+    featureList: features.map((f) => f.title),
+    audience: { "@type": "BusinessAudience", audienceType: audiences.map((a) => a.title).join(", ") },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "QCON",
+    url: "https://qcon.solutions/",
+    logo: "https://qcon.solutions/favicon.svg",
+  },
+];
+---
+<Base
+  title="Renovation & Interior Design Quotation Software | QCON Malaysia"
+  description={description}
+  jsonLd={jsonLd}
+  redirectIfLoggedIn
+>
+  <section class="py-20 md:py-32 bg-gradient-to-b to-background">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground max-w-4xl mx-auto">
+        Quotation Software Built for Interior &amp; Construction Companies
+      </h1>
+      <p class="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto">
+        Create structured quotations with clear material and labour breakdowns. Control your margins. Generate professional PDFs in minutes.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/register" class="btn btn-primary btn-lg">Create Your First Quotation<Icon name="arrow-right" class="ml-2 h-5 w-5" /></a>
+        <a href="/login" class="btn btn-outline btn-lg">Try QCON</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">Sound Familiar?</h2>
+        <p class="mt-4 text-lg text-muted-foreground">The quotation problems that cost contractors time and money</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {problems.map((p) => (
+          <div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50">
+            <div class="p-6 flex items-start space-x-3">
+              <Icon name="circle-x" class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" />
+              <div>
+                <h3 class="font-semibold text-foreground">{p.title}</h3>
+                <p class="mt-1 text-sm text-muted-foreground">{p.text}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">How QCON Helps</h2>
+        <p class="mt-4 text-lg text-muted-foreground">A quotation system that understands how contractors work</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {solutions.map((s) => (
+          <div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50">
+            <div class="p-6 flex items-start space-x-3">
+              <Icon name={s.icon} class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <h3 class="font-semibold text-foreground">{s.title}</h3>
+                <p class="mt-1 text-sm text-muted-foreground">{s.text}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">Features That Matter</h2>
+        <p class="mt-4 text-lg text-muted-foreground">Everything you need for professional quotations. Nothing you don't.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {features.map((f) => (
+          <div class="card text-center">
+            <div class="p-6">
+              <Icon name={f.icon} class="h-10 w-10 text-primary mx-auto" />
+              <h3 class="mt-4 font-semibold text-foreground">{f.title}</h3>
+              <p class="mt-1 text-sm text-muted-foreground">{f.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">Built For</h2>
+        <p class="mt-4 text-lg text-muted-foreground">If you prepare project quotations, this is for you</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {audiences.map((a) => (
+          <div class="card">
+            <div class="p-6 text-center">
+              <div class="h-16 w-16 rounded-full flex items-center justify-center mx-auto">
+                <Icon name={a.icon} class="h-8 w-8 text-primary" />
+              </div>
+              <h3 class="mt-4 font-semibold text-foreground">{a.title}</h3>
+              <p class="mt-2 text-sm text-muted-foreground">{a.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">Why QCON?</h2>
+        <p class="mt-4 text-lg text-muted-foreground">Built specifically for interior design and construction quotations</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-8">
+        {comparisons.map((c) => (
+          <div class="card">
+            <div class="p-6">
+              <div class="flex items-center space-x-3 mb-4">
+                <div class={`h-10 w-10 rounded-lg flex items-center justify-center ${c.tint}`}>
+                  <Icon name="circle-x" class="h-5 w-5" />
+                </div>
+                <h3 class="font-semibold text-lg">{c.title}</h3>
+              </div>
+              <ul class="space-y-2 text-sm text-muted-foreground">
+                {c.points.map((pt) => (
+                  <li class="flex items-start">
+                    <Icon name="circle-check-big" class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="mt-12 grid sm:grid-cols-3 gap-6 text-center">
+        {benefits.map((b) => (
+          <div>
+            <div class="h-12 w-12 rounded-full flex items-center justify-center mx-auto">
+              <Icon name={b.icon} class="h-6 w-6 text-primary" />
+            </div>
+            <h3 class="mt-3 font-semibold">{b.title}</h3>
+            <p class="mt-1 text-sm text-muted-foreground">{b.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-primary text-primary-foreground">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">Stop Losing Money at the Quotation Stage</h2>
+      <p class="mt-4 text-lg opacity-90">Quote with confidence. Know your margins. Win more projects.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/register" class="btn btn-secondary btn-lg">Create Your First Quotation<Icon name="arrow-right" class="ml-2 h-5 w-5" /></a>
+      </div>
+      <p class="mt-6 text-sm opacity-75">Free to get started. No credit card required.</p>
+    </div>
+  </section>
+</Base>

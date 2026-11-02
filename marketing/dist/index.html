@@ -1,0 +1,651 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Renovation &amp; Interior Design Quotation Software | QCON Malaysia</title><meta name="description" content="Create renovation and interior design quotations in minutes: material and labour breakdown, automatic margins and professional PDFs. Built for Malaysian contractors."><link rel="canonical" href="https://qcon.solutions/"><meta property="og:type" content="website"><meta property="og:site_name" content="QCON"><meta property="og:url" content="https://qcon.solutions/"><meta property="og:title" content="Renovation &amp; Interior Design Quotation Software | QCON Malaysia"><meta property="og:description" content="Create renovation and interior design quotations in minutes: material and labour breakdown, automatic margins and professional PDFs. Built for Malaysian contractors."><meta property="og:image" content="https://qcon.solutions/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QCON","url":"https://qcon.solutions/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Quotation software for interior designers and renovation contractors: section-based quotations, material and labour costing, margin visibility and PDF output.","featureList":["Section-Based Builder","Line Item Costing","Margin Visibility","PDF Generation","Easy Revisions"],"audience":{"@type":"BusinessAudience","audienceType":"Interior Designers, Renovation Contractors, Construction Teams, Project-Based Businesses"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"QCON","url":"https://qcon.solutions/","logo":"https://qcon.solutions/favicon.svg"}</script><script async src="https://www.googletagmanager.com/gtag/js?id=AW-17841544463"></script><script>(function(){const GOOGLE_ADS_ID = "AW-17841544463";
+const GA4_ID = "G-Y7QNNYRQWH";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", GOOGLE_ADS_ID);
+      gtag("config", GA4_ID);
+    })();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&family=Sora:wght@400..800&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#1d4ed8"><script>
+        // Same behaviour as the app: signed-in users go straight to their dashboard.
+        fetch("/api/auth/me", { credentials: "same-origin" })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (d) { if (d && d.user) location.replace("/dashboard"); })
+          .catch(function () {});
+      </script><link rel="stylesheet" href="/_site/Base.DUHWHEpJ.css"></head> <body> <div class="min-h-screen"> <header class="bg-card border-b border-border shadow-sm"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex justify-between items-center h-16"> <a href="/" class="flex items-center space-x-3" aria-label="QCON home"> <svg width="36" height="36" viewBox="0 0 100 100" fill="none" aria-hidden="true"> <path d="M78 56 V24 Q78 14 68 14 H24 Q14 14 14 24 V68 Q14 78 24 78 H56" stroke="#1d4ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M78 56 A22 22 0 0 1 56 78" stroke="#3b82f6" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round"></path> <path d="M58 58 L90 90" stroke="#1d4ed8" stroke-width="11" stroke-linecap="round"></path> </svg> <span class="text-xl font-semibold text-foreground font-brand">QCON</span> </a> <nav class="flex items-center gap-3" aria-label="Main"> <a href="/contact-support" class="btn btn-ghost btn-sm gap-1"> <svg
+  class="h-4 w-4" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+</svg> <span class="hidden sm:inline">Support</span> </a> <a href="/login" class="btn btn-ghost btn-md">Sign In</a> <a href="/register" class="btn btn-primary btn-md">Sign Up</a> </nav> </div> </div> </header> <main class="bg-background">  <section class="py-20 md:py-32 bg-gradient-to-b to-background"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground max-w-4xl mx-auto">
+Quotation Software Built for Interior &amp; Construction Companies
+</h1> <p class="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto">
+Create structured quotations with clear material and labour breakdowns. Control your margins. Generate professional PDFs in minutes.
+</p> <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"> <a href="/register" class="btn btn-primary btn-lg">Create Your First Quotation<svg
+  class="ml-2 h-5 w-5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></a> <a href="/login" class="btn btn-outline btn-lg">Try QCON</a> </div> </div> </section> <section class="py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-bold text-foreground">Sound Familiar?</h2> <p class="mt-4 text-lg text-muted-foreground">The quotation problems that cost contractors time and money</p> </div> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> <div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> <div> <h3 class="font-semibold text-foreground">Excel &amp; WhatsApp Chaos</h3> <p class="mt-1 text-sm text-muted-foreground">Juggling spreadsheets and sending quotations through chat. No central system, no version control.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> <div> <h3 class="font-semibold text-foreground">Manual Recalculations</h3> <p class="mt-1 text-sm text-muted-foreground">Every scope change means recalculating everything by hand. Easy to make mistakes.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> <div> <h3 class="font-semibold text-foreground">Losing Margin</h3> <p class="mt-1 text-sm text-muted-foreground">Underquoting because you forgot to include costs or miscalculated markups.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> <div> <h3 class="font-semibold text-foreground">Version Confusion</h3> <p class="mt-1 text-sm text-muted-foreground">Which quotation version did you send? Was it the updated one? Nobody knows.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> <div> <h3 class="font-semibold text-foreground">Unprofessional Presentation</h3> <p class="mt-1 text-sm text-muted-foreground">Your quotations don&#39;t look as good as your work. First impressions matter.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-red-200 bg-red-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> <div> <h3 class="font-semibold text-foreground">Time Wasted</h3> <p class="mt-1 text-sm text-muted-foreground">Hours spent on quotation admin instead of actual project work.</p> </div> </div> </div> </div> </div> </section> <section class="py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-bold text-foreground">How QCON Helps</h2> <p class="mt-4 text-lg text-muted-foreground">A quotation system that understands how contractors work</p> </div> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> <div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+  <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+  <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+</svg> <div> <h3 class="font-semibold text-foreground">Structured Quotation Sections</h3> <p class="mt-1 text-sm text-muted-foreground">Organize your quotation by category — carpentry, electrical, painting, and more. Clear structure your clients can understand.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="16" height="20" x="4" y="2" rx="2" />
+  <line x1="8" x2="16" y1="6" y2="6" />
+  <line x1="16" x2="16" y1="14" y2="18" />
+  <path d="M16 10h.01" />
+  <path d="M12 10h.01" />
+  <path d="M8 10h.01" />
+  <path d="M12 14h.01" />
+  <path d="M8 14h.01" />
+  <path d="M12 18h.01" />
+  <path d="M8 18h.01" />
+</svg> <div> <h3 class="font-semibold text-foreground">Clear Material &amp; Labour Breakdown</h3> <p class="mt-1 text-sm text-muted-foreground">Separate costs and selling prices. See your margin on every line item before you send.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+  <polyline points="16 7 22 7 22 13" />
+</svg> <div> <h3 class="font-semibold text-foreground">Automatic Calculations</h3> <p class="mt-1 text-sm text-muted-foreground">Totals, subtotals, and margins calculated automatically. Change one number and everything updates.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M12 18v-6" />
+  <path d="m9 15 3 3 3-3" />
+</svg> <div> <h3 class="font-semibold text-foreground">Professional PDF Output</h3> <p class="mt-1 text-sm text-muted-foreground">Generate clean, professional quotation PDFs with your company branding. Look as good as your work.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" />
+</svg> <div> <h3 class="font-semibold text-foreground">Faster Quotation Preparation</h3> <p class="mt-1 text-sm text-muted-foreground">Create quotations in minutes, not hours. Duplicate and modify for similar projects.</p> </div> </div> </div><div class="rounded-lg border text-card-foreground shadow-sm border-green-200 bg-green-50/50"> <div class="p-6 flex items-start space-x-3"> <svg
+  class="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" />
+  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+  <path d="M8 16H3v5" />
+</svg> <div> <h3 class="font-semibold text-foreground">Easy Revisions</h3> <p class="mt-1 text-sm text-muted-foreground">Need to update the quotation? Make changes and regenerate. Track different versions.</p> </div> </div> </div> </div> </div> </section> <section class="py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-bold text-foreground">Features That Matter</h2> <p class="mt-4 text-lg text-muted-foreground">Everything you need for professional quotations. Nothing you don't.</p> </div> <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6"> <div class="card text-center"> <div class="p-6"> <svg
+  class="h-10 w-10 text-primary mx-auto" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+  <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+  <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+</svg> <h3 class="mt-4 font-semibold text-foreground">Section-Based Builder</h3> <p class="mt-1 text-sm text-muted-foreground">Organize by work category</p> </div> </div><div class="card text-center"> <div class="p-6"> <svg
+  class="h-10 w-10 text-primary mx-auto" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="16" height="20" x="4" y="2" rx="2" />
+  <line x1="8" x2="16" y1="6" y2="6" />
+  <line x1="16" x2="16" y1="14" y2="18" />
+  <path d="M16 10h.01" />
+  <path d="M12 10h.01" />
+  <path d="M8 10h.01" />
+  <path d="M12 14h.01" />
+  <path d="M8 14h.01" />
+  <path d="M12 18h.01" />
+  <path d="M8 18h.01" />
+</svg> <h3 class="mt-4 font-semibold text-foreground">Line Item Costing</h3> <p class="mt-1 text-sm text-muted-foreground">Track cost &amp; selling price</p> </div> </div><div class="card text-center"> <div class="p-6"> <svg
+  class="h-10 w-10 text-primary mx-auto" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+  <polyline points="16 7 22 7 22 13" />
+</svg> <h3 class="mt-4 font-semibold text-foreground">Margin Visibility</h3> <p class="mt-1 text-sm text-muted-foreground">See profit on every item</p> </div> </div><div class="card text-center"> <div class="p-6"> <svg
+  class="h-10 w-10 text-primary mx-auto" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M12 18v-6" />
+  <path d="m9 15 3 3 3-3" />
+</svg> <h3 class="mt-4 font-semibold text-foreground">PDF Generation</h3> <p class="mt-1 text-sm text-muted-foreground">Professional documents</p> </div> </div><div class="card text-center"> <div class="p-6"> <svg
+  class="h-10 w-10 text-primary mx-auto" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" />
+  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+  <path d="M8 16H3v5" />
+</svg> <h3 class="mt-4 font-semibold text-foreground">Easy Revisions</h3> <p class="mt-1 text-sm text-muted-foreground">Update and regenerate</p> </div> </div> </div> </div> </section> <section class="py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-bold text-foreground">Built For</h2> <p class="mt-4 text-lg text-muted-foreground">If you prepare project quotations, this is for you</p> </div> <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"> <div class="card"> <div class="p-6 text-center"> <div class="h-16 w-16 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-8 w-8 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+  <path d="m14.5 12.5 2-2" />
+  <path d="m11.5 9.5 2-2" />
+  <path d="m8.5 6.5 2-2" />
+  <path d="m17.5 15.5 2-2" />
+</svg> </div> <h3 class="mt-4 font-semibold text-foreground">Interior Designers</h3> <p class="mt-2 text-sm text-muted-foreground">Create detailed quotations for renovation and fit-out projects</p> </div> </div><div class="card"> <div class="p-6 text-center"> <div class="h-16 w-16 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-8 w-8 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" />
+  <path d="M14 6a6 6 0 0 1 6 6v3" />
+  <path d="M4 15v-3a6 6 0 0 1 6-6" />
+  <rect x="2" y="15" width="20" height="4" rx="1" />
+</svg> </div> <h3 class="mt-4 font-semibold text-foreground">Renovation Contractors</h3> <p class="mt-2 text-sm text-muted-foreground">Quote confidently with clear cost breakdowns</p> </div> </div><div class="card"> <div class="p-6 text-center"> <div class="h-16 w-16 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-8 w-8 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+  <path d="M10 6h4" />
+  <path d="M10 10h4" />
+  <path d="M10 14h4" />
+  <path d="M10 18h4" />
+</svg> </div> <h3 class="mt-4 font-semibold text-foreground">Construction Teams</h3> <p class="mt-2 text-sm text-muted-foreground">Manage project quotations with your team</p> </div> </div><div class="card"> <div class="p-6 text-center"> <div class="h-16 w-16 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-8 w-8 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+  <rect width="20" height="14" x="2" y="6" rx="2" />
+</svg> </div> <h3 class="mt-4 font-semibold text-foreground">Project-Based Businesses</h3> <p class="mt-2 text-sm text-muted-foreground">Any business that quotes on a project basis</p> </div> </div> </div> </div> </section> <section class="py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-bold text-foreground">Why QCON?</h2> <p class="mt-4 text-lg text-muted-foreground">Built specifically for interior design and construction quotations</p> </div> <div class="grid lg:grid-cols-3 gap-8"> <div class="card"> <div class="p-6"> <div class="flex items-center space-x-3 mb-4"> <div class="h-10 w-10 rounded-lg flex items-center justify-center bg-red-100 text-red-600"> <svg
+  class="h-5 w-5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> </div> <h3 class="font-semibold text-lg">vs. Excel</h3> </div> <ul class="space-y-2 text-sm text-muted-foreground"> <li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>No more formula errors</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Professional PDF output included</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Built-in margin tracking</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Team access and collaboration</span> </li> </ul> </div> </div><div class="card"> <div class="p-6"> <div class="flex items-center space-x-3 mb-4"> <div class="h-10 w-10 rounded-lg flex items-center justify-center bg-orange-100 text-orange-600"> <svg
+  class="h-5 w-5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> </div> <h3 class="font-semibold text-lg">vs. Generic Invoice Apps</h3> </div> <ul class="space-y-2 text-sm text-muted-foreground"> <li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Designed for quotations, not invoices</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Section-based structure for construction</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Cost vs selling price tracking</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Understands contractor workflows</span> </li> </ul> </div> </div><div class="card"> <div class="p-6"> <div class="flex items-center space-x-3 mb-4"> <div class="h-10 w-10 rounded-lg flex items-center justify-center bg-purple-100 text-purple-600"> <svg
+  class="h-5 w-5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m15 9-6 6" />
+  <path d="m9 9 6 6" />
+</svg> </div> <h3 class="font-semibold text-lg">vs. Custom Systems</h3> </div> <ul class="space-y-2 text-sm text-muted-foreground"> <li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Ready to use immediately</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>No development costs</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Regular updates and improvements</span> </li><li class="flex items-start"> <svg
+  class="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+  <path d="m9 11 3 3L22 4" />
+</svg> <span>Support when you need it</span> </li> </ul> </div> </div> </div> <div class="mt-12 grid sm:grid-cols-3 gap-6 text-center"> <div> <div class="h-12 w-12 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-6 w-6 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+</svg> </div> <h3 class="mt-3 font-semibold">Protects Your Margins</h3> <p class="mt-1 text-sm text-muted-foreground">Never underquote again</p> </div><div> <div class="h-12 w-12 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-6 w-6 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" />
+</svg> </div> <h3 class="mt-3 font-semibold">Saves Time</h3> <p class="mt-1 text-sm text-muted-foreground">Quote faster, win more work</p> </div><div> <div class="h-12 w-12 rounded-full flex items-center justify-center mx-auto"> <svg
+  class="h-6 w-6 text-primary" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+  <polyline points="16 7 22 7 22 13" />
+</svg> </div> <h3 class="mt-3 font-semibold">Reduces Mistakes</h3> <p class="mt-1 text-sm text-muted-foreground">Automatic calculations</p> </div> </div> </div> </section> <section class="py-20 bg-primary text-primary-foreground"> <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> <h2 class="text-3xl md:text-4xl font-bold">Stop Losing Money at the Quotation Stage</h2> <p class="mt-4 text-lg opacity-90">Quote with confidence. Know your margins. Win more projects.</p> <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"> <a href="/register" class="btn btn-secondary btn-lg">Create Your First Quotation<svg
+  class="ml-2 h-5 w-5" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></a> </div> <p class="mt-6 text-sm opacity-75">Free to get started. No credit card required.</p> </div> </section>  </main> <footer class="py-12 border-t bg-background"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex flex-col md:flex-row justify-between items-center gap-4"> <a href="/" class="inline-flex items-center gap-2" aria-label="QCON home"> <svg width="24" height="24" viewBox="0 0 100 100" fill="none" aria-hidden="true"> <path d="M78 56 V24 Q78 14 68 14 H24 Q14 14 14 24 V68 Q14 78 24 78 H56" stroke="#1d4ed8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M78 56 A22 22 0 0 1 56 78" stroke="#3b82f6" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round"></path> <path d="M58 58 L90 90" stroke="#1d4ed8" stroke-width="11" stroke-linecap="round"></path> </svg> <span class="font-brand" style="font-size:17px;line-height:1;color:rgb(17,24,39)">QCON</span> </a> <p class="text-sm text-muted-foreground text-center">Quotation software for interior design &amp; construction companies</p> </div> <nav class="mt-6 flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-sm text-muted-foreground" aria-label="Footer">  <a href="/contact-support" class="hover:text-foreground">Contact support</a> <a href="/privacy-policy" class="hover:text-foreground">Privacy policy</a> <span>© 2026 QCON</span> </nav> </div> </footer> </div> </body> </html>

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /onboarding
+Disallow: /company-profile
+Disallow: /quotation$
+Disallow: /quotation/
+Disallow: /team
+Disallow: /super-admin
+Disallow: /accept-invite
+
+Sitemap: https://qcon.solutions/sitemap.xml

@@ -1,0 +1,5 @@
+node_modules/
+.astro/
+.DS_Store
+*.log
+# NOTE: marketing/dist IS committed on purpose: the server serves it as-is (no build on the server).
