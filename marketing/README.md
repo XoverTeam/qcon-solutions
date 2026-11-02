@@ -34,9 +34,9 @@ Signed-in users who open the homepage are still sent to `/dashboard` (a small sc
 1. Copy `src/content/guides/_TEMPLATE.md` to e.g. `src/content/guides/renovation-quotation-template-malaysia.md`
 2. Fill in `title`, `description`, `published`, and remove `draft: true`
 3. Build and commit (needs Node 22.23+): `npm ci && npm run build && git add -A && git commit -m "Add guide" && git push`
-4. On the server: `sudo -iu qcon bash -c 'cd ~/marketing-src && git pull'`. That's all: no app rebuild or restart
+4. On the server: `ssh root@SERVER "sudo -iu qcon git -C /home/qcon/marketing-src pull --ff-only"`. That's all: no app rebuild or restart
 
-The guide appears at `qcon.solutions/guides/<file-name>`, on the `/guides` list and in the sitemap, and
+The guide appears at `qcon.solutions/guides/<file-name>`, on the `/guides/` list and in the sitemap, and
 the footer shows a "Guides" link once there is at least one guide.
 
 ## Rolling back
