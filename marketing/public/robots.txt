@@ -10,5 +10,6 @@ Disallow: /quotation/
 Disallow: /team
 Disallow: /super-admin
 Disallow: /accept-invite
+Disallow: /billing
 
 Sitemap: https://qcon.solutions/sitemap.xml
