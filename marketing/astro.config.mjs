@@ -6,9 +6,10 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://qcon.solutions",
   output: "static",
-  trailingSlash: "never",
+  trailingSlash: "ignore",
   build: {
-    format: "file", // /guides/foo -> guides/foo.html (no trailing slashes)
+    // "preserve": index pages -> folder/index.html (served at /guides/), others -> name.html (/guides/foo)
+    format: "preserve",
     assets: "_site", // keep clear of the React app's /assets folder
   },
   compressHTML: true,
