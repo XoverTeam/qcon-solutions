@@ -7,6 +7,7 @@ export const GET: APIRoute = async ({ site }) => {
   const today = new Date().toISOString().slice(0, 10);
   const urls: { loc: string; lastmod: string }[] = [
     { loc: "/", lastmod: today },
+    { loc: "/quotation-software-malaysia", lastmod: "2026-11-11" },
     ...(guides.length ? [{ loc: "/guides/", lastmod: today }] : []),
     ...guides.map((g) => ({
       loc: `/guides/${g.id}`,

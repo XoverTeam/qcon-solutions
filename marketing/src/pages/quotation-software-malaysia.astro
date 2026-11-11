@@ -1,0 +1,215 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+
+const title = "Quotation Software Malaysia: QCON vs Excel vs Accounting Apps";
+const description =
+  "Choosing quotation software in Malaysia? Compare Excel, accounting software and QCON for renovation and interior design quotations: sections, margins, PDFs and price.";
+const url = "https://qcon.solutions/quotation-software-malaysia";
+const updated = "2026-11-11";
+
+// Comparison rows: [feature, spreadsheet, accounting software, QCON]
+type Cell = { v: "yes" | "partial" | "no"; t: string };
+const yes = (t: string): Cell => ({ v: "yes", t });
+const partial = (t: string): Cell => ({ v: "partial", t });
+const no = (t: string): Cell => ({ v: "no", t });
+const rows: [string, Cell, Cell, Cell][] = [
+  ["Built for", partial("Anything: you build the layout"), partial("Bookkeeping, with quotes as one module"), yes("Renovation, interior design & construction quotations")],
+  ["Quotation sections by trade (carpentry, electrical…)", partial("Possible if you set it up"), partial("Usually a flat item list"), yes("Built in, with subtotals per section")],
+  ["Cost price vs selling price on every line", partial("Extra columns + formulas"), partial("Varies by product and plan"), yes("Built in")],
+  ["Margin visible before you send", partial("Only if your formulas are right"), partial("Varies"), yes("Per line and in total")],
+  ["Supplier per line item", partial("Manual column"), partial("Varies"), yes("Built in")],
+  ["Professional PDF with your logo", partial("Takes formatting work"), yes("Yes"), yes("Yes")],
+  ["Revisions & reusing past quotes", partial("Copy files, risk of wrong version"), yes("Usually yes"), yes("Duplicate & edit, one central list")],
+  ["Team access", partial("Shared files"), yes("Usually, per user"), yes("Admin & staff roles")],
+  ["Accounting, invoices & e-invoicing", no("No"), yes("Yes, their main job"), no("No. Quotations only")],
+  ["Learning curve", yes("Familiar"), partial("Steeper: built for accountants"), yes("Made for contractors")],
+  ["Cost", yes("Free / Microsoft 365"), partial("Monthly subscription"), yes("Free plan; Pro for unlimited use")],
+];
+const mark = { yes: "circle-check-big", partial: "circle-dot", no: "circle-x" } as const;
+const color = { yes: "text-green-600", partial: "text-amber-500", no: "text-red-500" } as const;
+
+const faq = [
+  {
+    q: "What is the best quotation software for contractors in Malaysia?",
+    a: "It depends on what you need. If you already use accounting software and only send simple quotes, its quotation module may be enough. If you price renovation or fit-out jobs with many trades and need to see cost, selling price and margin on every line, a quotation tool built for contractors, such as QCON, saves time and prevents underquoting. Excel works for occasional, simple quotes.",
+  },
+  {
+    q: "Do I need e-invoicing for quotations in Malaysia?",
+    a: "No. A quotation is not an invoice, so it is not submitted to LHDN's MyInvois system. E-invoicing applies to invoices, and since 1 September 2026 businesses with annual sales below RM3 million are exempt. If you issue e-invoices, do that in your accounting software, and use a quotation tool for the quotes that come before.",
+  },
+  {
+    q: "Can I use QCON together with my accounting software?",
+    a: "Yes. QCON handles the quotation stage (pricing, margins, revisions and the PDF your client signs). Once the job is confirmed, you invoice and do your accounts in your existing accounting software.",
+  },
+  {
+    q: "Is Excel good enough for renovation quotations?",
+    a: "For a few simple quotes, yes. It gets risky with many line items and revisions: a broken formula, a missed line or sending the wrong version can cost you the job's margin. Use a template with locked formulas, or move to a dedicated tool when you quote regularly.",
+  },
+  {
+    q: "Is QCON free?",
+    a: "QCON has a free plan for occasional use, and new accounts start with a free Pro trial without a credit card. Pro removes the monthly quotation limit and adds team members.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    dateModified: updated,
+    datePublished: updated,
+    mainEntityOfPage: url,
+    author: { "@type": "Organization", name: "QCON", url: "https://qcon.solutions/" },
+    publisher: { "@type": "Organization", name: "QCON", logo: { "@type": "ImageObject", url: "https://qcon.solutions/favicon.svg" } },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://qcon.solutions/" },
+      { "@type": "ListItem", position: 2, name: "Quotation software Malaysia", item: url },
+    ],
+  },
+];
+---
+<Base title={title} description={description} jsonLd={jsonLd} ogType="article">
+  <article class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-muted-foreground" aria-label="Breadcrumb"><a href="/" class="hover:text-foreground">Home</a> / Quotation software Malaysia</nav>
+      <h1 class="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-foreground">Quotation software in Malaysia: QCON vs Excel vs accounting software</h1>
+      <p class="mt-3 text-sm text-muted-foreground">Updated <time datetime={updated}>11 November 2026</time></p>
+
+      <div class="article mt-8">
+        <p>
+          Most Malaysian contractors and interior designers quote in one of three ways: an <strong>Excel or Google Sheets</strong>
+          template, the <strong>quotation module of their accounting software</strong>, or a <strong>tool built for quotations</strong>.
+          Excel is free but error-prone once a job has many lines and revisions. Accounting software is great for invoices and
+          e-invoicing but treats quotes as a simple item list. A contractor quotation tool like QCON adds what renovation work
+          needs: sections by trade, and cost vs selling price with your margin on every line.
+        </p>
+
+        <h2>Side-by-side comparison</h2>
+      </div>
+
+      <div class="mt-6 overflow-x-auto rounded-lg border bg-card">
+        <table class="w-full min-w-[640px] text-sm">
+          <thead class="bg-muted">
+            <tr class="text-left">
+              <th class="p-3 font-semibold w-[26%]">What you need</th>
+              <th class="p-3 font-semibold text-primary bg-blue-50">QCON</th>
+              <th class="p-3 font-semibold">Excel / Google Sheets</th>
+              <th class="p-3 font-semibold">Accounting software<br /><span class="font-normal text-muted-foreground">quotation module</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(([feature, excel, accounting, qcon]) => (
+              <tr class="border-t align-top">
+                <th scope="row" class="p-3 text-left font-medium">{feature}</th>
+                {[qcon, excel, accounting].map((c, i) => (
+                  <td class={`p-3 ${i === 0 ? "bg-blue-50/60" : ""}`}>
+                    <span class="flex items-start gap-2">
+                      <Icon name={mark[c.v]} class={`h-4 w-4 mt-0.5 shrink-0 ${color[c.v]}`} />
+                      <span>{c.t}</span>
+                    </span>
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-2 text-xs text-muted-foreground">
+        <span class="sm:hidden">Swipe the table sideways to see all columns. </span>Accounting software varies by product and plan (for example SQL Account, AutoCount, Bukku or Xero). Check the specific product's features.
+      </p>
+
+      <div class="article mt-10">
+        <h2>When Excel is enough</h2>
+        <p>
+          If you send a few quotations a month with a short list of items, a good spreadsheet works. Start from a template with
+          formulas already in place, such as our <a href="/guides/renovation-quotation-template-malaysia">free renovation quotation template</a>,
+          and always export to PDF before sending so the client can't change your figures.
+        </p>
+        <p>Excel starts costing you money when:</p>
+        <ul>
+          <li>a scope change means re-checking formulas across dozens of lines;</li>
+          <li>you can't tell which version the client saw;</li>
+          <li>you only find out after the job that a line was priced below cost.</li>
+        </ul>
+
+        <h2>When accounting software makes sense</h2>
+        <p>
+          You need accounting software anyway for invoices, payments, SST and, if your sales are above RM3 million a year,
+          e-invoicing through LHDN's MyInvois. Its quotation module is convenient when your quotes are simple and
+          turn straight into invoices. It's less suited to renovation and fit-out quotes, where you group work by trade, track
+          what each item costs you, and revise the quote several times before the client signs.
+        </p>
+
+        <h2>When a contractor quotation tool like QCON fits</h2>
+        <ul>
+          <li><strong>You quote multi-trade jobs</strong> (hacking, tiling, carpentry, electrical, plumbing, painting) and want each section clearly subtotalled.</li>
+          <li><strong>You need to see your margin before you send.</strong> QCON keeps your cost and your selling price on every line, so underquoting shows up immediately.</li>
+          <li><strong>You revise quotes often.</strong> Duplicate a past job, adjust it, and keep every quotation in one list instead of scattered files.</li>
+          <li><strong>Your team quotes too.</strong> Admins and staff work from the same company details, logo and terms.</li>
+        </ul>
+        <p>
+          QCON is not accounting software. It handles the quotation stage, and once the job is confirmed you invoice in your
+          existing system. Many contractors use both.
+        </p>
+
+        <h2>Checklist: what to look for in quotation software</h2>
+        <ol>
+          <li>Sections or categories by trade, with subtotals</li>
+          <li>Unit, quantity and rate on every line (sq ft, ft run, point, lot)</li>
+          <li>Your cost and selling price per line, with the margin shown</li>
+          <li>Discount, tax and payment terms</li>
+          <li>A validity period on every quote</li>
+          <li>A clean PDF with your logo and SSM number</li>
+          <li>Fast revisions: duplicate and edit instead of starting again</li>
+          <li>A free plan or trial so you can test it on a real job</li>
+        </ol>
+
+        <h2>Do quotations need e-invoicing?</h2>
+        <p>
+          No. E-invoicing applies to <em>invoices</em>, not quotations. Since 1 September 2026, businesses with annual sales
+          below RM3 million are exempt from e-invoicing, though LHDN still encourages voluntary adoption. If you do issue
+          e-invoices, keep doing that in your accounting software. Your quotation tool doesn't need to handle it.
+        </p>
+      </div>
+
+      <section class="mt-14">
+        <h2 class="text-2xl font-bold tracking-tight">Frequently asked questions</h2>
+        <dl class="mt-6 space-y-6">
+          {faq.map((f) => (
+            <div>
+              <dt class="font-semibold text-lg">{f.q}</dt>
+              <dd class="mt-1 text-muted-foreground" style="font-size:1.05rem;line-height:1.7">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <aside class="mt-14 rounded-lg bg-primary text-primary-foreground p-8 text-center">
+        <h2 class="text-2xl font-bold">Try QCON on your next quotation</h2>
+        <p class="mt-2 opacity-90">Sections by trade, cost vs selling price on every line, and a professional PDF in minutes.</p>
+        <a href="/register" class="btn btn-secondary btn-lg mt-6">Create Your First Quotation<Icon name="arrow-right" class="ml-2 h-5 w-5" /></a>
+        <p class="mt-4 text-sm opacity-75">Free to get started. No credit card required.</p>
+      </aside>
+
+      <div class="article mt-12 text-sm">
+        <h3>Sources</h3>
+        <ul>
+          <li>The Star, <a href="https://thestar.com.my/news/nation/2026/08/30/over-11-million-businesses-to-benefit-from-higher-e-invoicing-threshold-says-lhdn" rel="nofollow noopener">Over 1.1 million businesses to benefit from higher e-invoicing threshold, says LHDN</a> (30 Aug 2026)</li>
+          <li>Xero Malaysia, <a href="https://www.xero.com/my/small-businesses/construction/quoting-software" rel="nofollow noopener">Quoting software for construction</a></li>
+          <li>SQL Account, <a href="https://sql.com.my/features" rel="nofollow noopener">features</a></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</Base>

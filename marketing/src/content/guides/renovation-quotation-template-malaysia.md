@@ -125,7 +125,7 @@ with fewer arguments.
 ## When a spreadsheet stops being enough
 
 Excel works well for a few quotations a month. It gets painful when you're revising quotes several times,
-keeping track of which version the client saw, or checking margin line by line. [QCON](/) is built for that:
+keeping track of which version the client saw, or checking margin line by line ([see how the options compare](/quotation-software-malaysia)). [QCON](/) is built for that:
 the same section-by-section structure, cost vs selling price on every line, automatic margins, and a
 professional PDF with your branding in minutes.
 
