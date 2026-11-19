@@ -2,6 +2,7 @@
 title: "Free Renovation Quotation Template (Malaysia) + How to Use It"
 description: "Free Excel renovation quotation template for Malaysian contractors and interior designers, with trade sections, automatic totals, an SST line and a payment schedule."
 published: 2026-11-02
+updated: 2026-11-19
 faq:
   - q: "What should a renovation quotation include in Malaysia?"
     a: "Your company details and SSM number, the client and site address, the work itemised by trade with unit, quantity and rate, what is excluded, how long the price is valid, a payment schedule tied to milestones, terms for variations and defects, and a space for the client to sign."
@@ -59,7 +60,7 @@ an example only: replace the illustrative quantities and rates with your own.
 
 ## How to price each line without losing margin
 
-Most underquoting doesn't come from bad rates. It comes from **missing lines** and **confusing markup with margin**.
+For 2026 market rates by trade, see [renovation cost per sq ft in Malaysia](/guides/renovation-cost-per-sq-ft-malaysia). Most underquoting doesn't come from bad rates. It comes from **missing lines** and **confusing markup with margin**.
 
 **Lines contractors commonly forget:**
 
@@ -117,7 +118,7 @@ with fewer arguments.
 ## Common quotation mistakes
 
 - **No validity date**, so a client comes back six months later expecting the old price.
-- **"Any changes, settle later."** Put variation orders in writing with a price before doing the work.
+- **"Any changes, settle later."** Put variation orders in writing with a price before doing the work. Our free [variation order template](/guides/variation-order-template-malaysia) does the maths for you.
 - **Rounding everything into lump sums**, which makes every change a negotiation.
 - **Sending the spreadsheet itself.** Export to PDF so the client can't edit your figures.
 - **Re-typing old quotations** for similar jobs and missing a line along the way.

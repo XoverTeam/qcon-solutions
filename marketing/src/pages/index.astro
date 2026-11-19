@@ -1,6 +1,10 @@
 ---
 import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
+import { getCollection } from "astro:content";
+
+const guides = (await getCollection("guides", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
 
 // ── Page copy (same content as the original React landing page) ──
 const problems = [
@@ -43,8 +47,27 @@ const benefits = [
   { icon: "trending-up", title: "Reduces Mistakes", text: "Automatic calculations" },
 ];
 
+const faq = [
+  {
+    q: "What is a quotation system?",
+    a: "A quotation system is software for preparing, pricing and sending quotations. Instead of copying an Excel file for every job, you build each quotation from sections and line items, the totals and margins calculate themselves, and every quotation you've sent is kept in one place.",
+  },
+  {
+    q: "Who is QCON for?",
+    a: "Renovation contractors, interior designers and fit-out companies in Malaysia who quote jobs with many trades, such as hacking, tiling, carpentry, electrical and plumbing, and want to see their margin before they send.",
+  },
+  {
+    q: "Is QCON free?",
+    a: "Yes, there is a Free plan for 5 new quotations a month with 1 user, and new accounts get a 14-day Pro trial without a credit card. Pro removes the monthly limit and lets your whole team work in the same account.",
+  },
+  {
+    q: "Does QCON handle invoices and e-invoicing?",
+    a: "No. QCON is for the quotation stage: pricing, margins, revisions and the PDF your client signs. Once the job is confirmed, you invoice in your accounting software.",
+  },
+];
+
 const description =
-  "Create renovation and interior design quotations in minutes: material and labour breakdown, automatic margins and professional PDFs. Built for Malaysian contractors.";
+  "Renovation quotation system for Malaysian contractors and interior designers: sections by trade, cost vs selling price, automatic margins and professional PDFs.";
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -57,6 +80,8 @@ const jsonLd = [
       "Quotation software for interior designers and renovation contractors: section-based quotations, material and labour costing, margin visibility and PDF output.",
     featureList: features.map((f) => f.title),
     audience: { "@type": "BusinessAudience", audienceType: audiences.map((a) => a.title).join(", ") },
+    areaServed: { "@type": "Country", name: "Malaysia" },
+    offers: { "@type": "Offer", price: "0", priceCurrency: "MYR", description: "Free plan: 5 quotations a month" },
   },
   {
     "@context": "https://schema.org",
@@ -65,10 +90,15 @@ const jsonLd = [
     url: "https://qcon.solutions/",
     logo: "https://qcon.solutions/favicon.svg",
   },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  },
 ];
 ---
 <Base
-  title="Renovation & Interior Design Quotation Software | QCON Malaysia"
+  title="Renovation Quotation System Malaysia | QCON"
   description={description}
   jsonLd={jsonLd}
   redirectIfLoggedIn
@@ -76,10 +106,10 @@ const jsonLd = [
   <section class="py-20 md:py-32 bg-gradient-to-b to-background">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground max-w-4xl mx-auto">
-        Quotation Software Built for Interior &amp; Construction Companies
+        Renovation Quotation System for Malaysian Contractors &amp; Interior Designers
       </h1>
       <p class="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto">
-        Create structured quotations with clear material and labour breakdowns. Control your margins. Generate professional PDFs in minutes.
+        Build quotations by trade, with your cost and selling price on every line. See your margin before you send, and give clients a professional PDF in minutes.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="/register" class="btn btn-primary btn-lg">Create Your First Quotation<Icon name="arrow-right" class="ml-2 h-5 w-5" /></a>
@@ -114,7 +144,7 @@ const jsonLd = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-foreground">How QCON Helps</h2>
-        <p class="mt-4 text-lg text-muted-foreground">A quotation system that understands how contractors work</p>
+        <p class="mt-4 text-lg text-muted-foreground">A quotation system built around how Malaysian renovation contractors and interior designers price their jobs</p>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {solutions.map((s) => (
@@ -213,6 +243,41 @@ const jsonLd = [
           </div>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground">Free Guides &amp; Templates</h2>
+        <p class="mt-4 text-lg text-muted-foreground">Pricing, quotation and contract know-how for Malaysian renovation work</p>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <a href="/quotation-software-malaysia" class="card block p-6 hover:border-primary">
+          <h3 class="font-semibold text-foreground">Quotation software in Malaysia: QCON vs Excel vs accounting software</h3>
+          <p class="mt-2 text-sm text-muted-foreground">Which option fits how you quote, side by side.</p>
+        </a>
+        {guides.map((g) => (
+          <a href={`/guides/${g.id}`} class="card block p-6 hover:border-primary">
+            <h3 class="font-semibold text-foreground">{g.data.title}</h3>
+            <p class="mt-2 text-sm text-muted-foreground">{g.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-foreground text-center">Frequently Asked Questions</h2>
+      <dl class="mt-10 space-y-8">
+        {faq.map((f) => (
+          <div>
+            <dt class="font-semibold text-lg text-foreground">{f.q}</dt>
+            <dd class="mt-2 text-muted-foreground leading-relaxed">{f.a}</dd>
+          </div>
+        ))}
+      </dl>
     </div>
   </section>
 

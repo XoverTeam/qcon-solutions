@@ -8,6 +8,9 @@ export async function getStaticPaths() {
   return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
 }
 const { guide } = Astro.props;
+const others = (await getCollection("guides", ({ data }) => !data.draft))
+  .filter((g) => g.id !== guide.id)
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
 const { Content } = await render(guide);
 const { title, description, published, updated, faq } = guide.data;
 const url = new URL(`/guides/${guide.id}`, Astro.site).href;
@@ -78,6 +81,16 @@ if (faq.length) {
         <a href="/register" class="btn btn-secondary btn-lg mt-6">Create Your First Quotation<Icon name="arrow-right" class="ml-2 h-5 w-5" /></a>
         <p class="mt-4 text-sm opacity-75">Free to get started. No credit card required.</p>
       </aside>
+
+      <nav class="mt-14" aria-label="More guides">
+        <h2 class="text-xl font-bold tracking-tight">More guides</h2>
+        <ul class="mt-4 grid gap-3">
+          {others.map((g) => (
+            <li><a href={`/guides/${g.id}`} class="card block p-4 hover:border-primary"><span class="font-semibold text-foreground">{g.data.title}</span></a></li>
+          ))}
+          <li><a href="/quotation-software-malaysia" class="card block p-4 hover:border-primary"><span class="font-semibold text-foreground">Quotation software in Malaysia: QCON vs Excel vs accounting software</span></a></li>
+        </ul>
+      </nav>
     </div>
   </article>
 </Base>
