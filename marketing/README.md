@@ -43,3 +43,16 @@ the footer shows a "Guides" link once there is at least one guide.
 
 `sudo -iu qcon mv ~/marketing-src ~/marketing-src.off` puts the old React homepage back immediately
 (no restart needed). Move it back to restore.
+
+## Automatic guides (3 a week)
+
+A scheduled writing task adds one guide every Monday, Wednesday and Friday:
+
+- It takes the next topic from `content/CONTENT_PLAN.md` and follows `content/WRITING_GUIDE.md`.
+- It researches the topic, writes `src/content/guides/<slug>.md`, adds a link from 1–2 related guides, and runs
+  `npm run build`, `npm run check` and `npm run check:mobile`.
+- If everything passes, it commits to `marketing-site` and pushes. The server pulls `marketing-site` every 15 minutes,
+  so the guide goes live without a restart.
+- If a check fails, nothing is pushed.
+
+To pause it, turn off the scheduled task in Claude. To change what gets written, edit `content/CONTENT_PLAN.md`.

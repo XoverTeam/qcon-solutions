@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "check": "node scripts/check-site.mjs",
+    "check:mobile": "node scripts/check-mobile.cjs"
   },
   "engines": {
     "node": ">=22.23.4"
