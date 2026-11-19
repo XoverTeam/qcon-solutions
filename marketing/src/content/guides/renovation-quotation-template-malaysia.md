@@ -71,7 +71,7 @@ For 2026 market rates by trade, see [renovation cost per sq ft in Malaysia](/gui
 - Final cleaning before handover
 - Wastage allowance on tiles and boards (cut pieces, breakage)
 
-**Markup vs margin.** If an item costs you RM100 and you add a 30% *markup*, you sell at RM130, but your
+**Markup vs margin** ([full guide](/guides/markup-vs-margin-contractors)). If an item costs you RM100 and you add a 30% *markup*, you sell at RM130, but your
 *margin* is only 23% (RM30 ÷ RM130). To earn a true 30% margin you need:
 
 | | Formula | Selling price on RM100 cost |
@@ -94,6 +94,7 @@ mean most small renovation contractors still don't charge it:
   buildings, backdated to 1 July 2025. To rely on it, the contractor must keep proof that the building is
   residential, and the invoice must show the client's name and the property address.
 
+For the full rules, see [SST on renovation and construction](/guides/sst-renovation-construction-malaysia).
 Commercial fit-outs (offices, shops, F&B) are a different story: if you're SST-registered, they're generally
 taxable. Leave the template's tax rate at **0%** unless you're registered and the job is taxable. The rules
 changed twice in a year, so confirm with your tax agent or the Royal Malaysian Customs Department.
