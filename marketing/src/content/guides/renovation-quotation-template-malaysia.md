@@ -114,7 +114,8 @@ The template's default schedule follows that:
 | 5 | Retention, released after the defects period | 5% |
 
 Tie each payment to something the client can *see* on site. That gets you paid faster, and it gets you paid
-with fewer arguments.
+with fewer arguments. For deposits, payment terms and retention in more detail, see our
+[renovation payment schedule guide](/guides/renovation-payment-schedule-malaysia).
 
 ## Common quotation mistakes
 

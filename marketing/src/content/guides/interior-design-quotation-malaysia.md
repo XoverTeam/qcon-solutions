@@ -86,7 +86,8 @@ without waiting on every sofa choice.
 | 6 | Retention after the defects period | About 5% |
 
 Homeowner guides treat a 10–20% build deposit as normal and flag anything above 25% upfront as a warning sign. Taking
-the design fee upfront protects your design time if the client doesn't go ahead.
+the design fee upfront protects your design time if the client doesn't go ahead. The [renovation payment schedule guide](/guides/renovation-payment-schedule-malaysia) covers
+payment terms and retention in more detail.
 
 ## Common interior design quotation mistakes
 
