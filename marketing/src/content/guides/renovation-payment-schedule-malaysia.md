@@ -131,7 +131,8 @@ a particular job is covered depends on the facts, so check with a lawyer before 
 - **Validity**: how long the price and schedule hold.
 
 CIDB has offered free sample contracts for renovation and small projects since 2015. Using one, or attaching your
-quotation to one, gives the client terms they can check against a recognised standard.
+quotation to one, gives the client terms they can check against a recognised standard. Show your
+[CIDB registration](/guides/cidb-registration-malaysia) number on the same quotation, so they can check you too.
 
 ## Put the schedule in every quotation
 

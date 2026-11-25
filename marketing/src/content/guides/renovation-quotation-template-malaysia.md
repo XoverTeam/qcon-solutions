@@ -44,7 +44,8 @@ an example only: replace the illustrative quantities and rates with your own.
 ## What a professional renovation quotation should include
 
 1. **Who you are.** Registered company name, SSM number, address and a contact person. With renovation scams
-   in the news, showing you're a registered business is the quickest way to earn trust.
+   in the news, showing you're a registered business, with your [CIDB registration](/guides/cidb-registration-malaysia)
+   number and grade, is the quickest way to earn trust.
 2. **Who and where.** The client's name and the exact site address, including unit number.
 3. **Itemised work, grouped by trade.** "Kitchen renovation – RM28,000" invites arguments. "Supply & lay
    600 × 600mm homogeneous floor tiles, 450 sq ft @ RM11" doesn't. Lump-sum quotes with no breakdown are one

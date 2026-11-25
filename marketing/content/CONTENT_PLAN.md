@@ -17,11 +17,11 @@ Topics marked ⚖️ are tax, legal or regulatory: official sources only.
 - [x] Markup vs margin (2026-11-19): /guides/markup-vs-margin-contractors
 - [x] Plaster ceiling price per sq ft (2026-11-20): /guides/plaster-ceiling-price-malaysia
 - [x] Renovation Payment Schedule Malaysia: Deposit & Progress Payments (2026-11-23): /guides/renovation-payment-schedule-malaysia
+- [x] CIDB Registration G1 for Renovation Contractors Malaysia (2026) (2026-11-25): /guides/cidb-registration-malaysia
 
 ## Queue
 
 - [x] SKIPPED: How to write a quotation (Malaysia). Overlaps heavily with the renovation quotation template guide (what to include, format, mistakes).
-- [ ] CIDB registration for renovation contractors: grades, G1, cost, when you need it ⚖️. Search: "cidb registration g1"
 - [ ] Electrical wiring quotation: rewiring cost, lighting & power points, DB box. Search: "rewiring cost malaysia", "electrical quotation"
 - [ ] Built-in wardrobe quotation & price per ft run. Search: "wardrobe price per ft malaysia"
 - [ ] Quotation vs invoice vs proforma invoice (Malaysia), incl. where e-invoicing fits ⚖️. Search: "quotation vs invoice"
