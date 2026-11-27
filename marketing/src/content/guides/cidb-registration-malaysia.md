@@ -101,7 +101,7 @@ certificate. A 2026 list of CIDB codes includes these that renovation contractor
 | B28 | Renovation: additions and alterations to buildings |
 | E04 | Low-voltage electrical installation and wiring |
 
-Some codes need another licence as well. Electrical wiring needs registration with the Energy Commission, and
+Some codes need another licence as well. Electrical wiring needs registration with the Energy Commission (see the [electrical wiring quotation guide](/guides/electrical-wiring-quotation-malaysia)), and
 internal plumbing (B10) needs a permit from the water regulator, SPAN. Each change to your codes costs a RM30 processing fee in CIMS.
 
 ## Keeping your registration valid

@@ -57,7 +57,7 @@ rates against, not as prices to copy. Location, access, quantity and material gr
 | Kitchen cabinets, plywood | RM330–600 | per ft run |
 | Built-in wardrobes and other carpentry | RM400–900 | per ft run |
 
-Bathrooms are priced per bathroom more often than per sq ft; see the [bathroom renovation quotation guide](/guides/bathroom-renovation-quotation-malaysia). Plaster ceilings mix units: the flat ceiling per sq ft, L-boxes and cornice per ft run (see the [plaster ceiling price guide](/guides/plaster-ceiling-price-malaysia)).
+Bathrooms are priced per bathroom more often than per sq ft; see the [bathroom renovation quotation guide](/guides/bathroom-renovation-quotation-malaysia). Plaster ceilings mix units: the flat ceiling per sq ft, L-boxes and cornice per ft run (see the [plaster ceiling price guide](/guides/plaster-ceiling-price-malaysia)). Electrical work is priced per point, with the DB box as its own line (see the [electrical wiring quotation guide](/guides/electrical-wiring-quotation-malaysia)).
 Carpentry is usually the biggest single line. It's priced per foot run, so 20% more cabinet length means roughly 20%
 more carpentry cost. For more on cabinet pricing, see the [kitchen cabinet quotation guide](/guides/kitchen-cabinet-quotation-malaysia).
 
